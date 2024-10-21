@@ -1,0 +1,26 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.quantity-div {
+    display: flex;
+    align-items: center;
+ }
+
+ img {
+    width: 100px;
+    height: auto;
+  }
+
+.header {
+    display: flex;
+    align-items: left;/
+}
+
+.orderinfo table, .orderinfo th, .orderinfo td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 16px;
+    text-align: center;
+    padding: 4px;
+}

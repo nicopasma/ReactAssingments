@@ -5,6 +5,10 @@ import headerImage from './assets/landscape.png'
 import './app.css'
 
 function App() {
+  <ComponentUI/>
+}
+
+function ComponentUI() {
   const products = [
     {name: 'AMD Ryzen 5 3600', price: 245 },
     {name: 'Tuote 2', price: 330 },

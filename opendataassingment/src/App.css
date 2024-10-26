@@ -1,4 +1,11 @@
 img {
   padding: 5px;
   width: 150px;
+  border-radius: 50%;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  text-align: center;
 }

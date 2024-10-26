@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
+
 function App() {
   return (
     <Cocktail />
@@ -36,11 +37,10 @@ function Cocktail() {
           <div key={drink.idDrink}>
             <img src={drink.strDrinkThumb} alt={drink.strDrink}/>
             <h2>{drink.strDrink}</h2>
-            <p>Category: {drink.strCategory}</p>
-            <p>Glass: {drink.strGlass}</p>
-            <p>Instructions: {drink.strInstructions}</p>
+            <b>Category: </b><p>{drink.strCategory}</p>
+            <b>Glass: </b><p>{drink.strGlass}</p>
+            <b>Instructions: </b><p>{drink.strInstructions}</p>
             <h3>Ingredients</h3>
-            <ul>
               {Array.from({ length: 15 }, (_, i) => i + 1)
                 .map((i) => ({
                   ingredient: drink[`strIngredient${i}`],
@@ -48,11 +48,10 @@ function Cocktail() {
                 }))
                 .filter((item) => item.ingredient)
                 .map((item, index) => (
-                  <li key={index}>
+                  <p key={index}>
                     {item.measure ? `${item.measure} ` : ''}{item.ingredient}
-                  </li>
+                  </p>
                 ))}
-            </ul>
           </div>
         ))}
       </div>
